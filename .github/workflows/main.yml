@@ -64,7 +64,7 @@ jobs:
             --name fastapi-tdd-docker \
             -e PORT=8765 \
             -e ENVIRONMENT=dev \
-            -e DATABASE_URI=sqlite://sqlite.db \
+            -e DATABASE_URL=sqlite://sqlite.db \
             -e DATABASE_TEST_URL=sqlite://sqlite.db \
             ${{ env.IMAGE }}:latest
       - name: Pytest
